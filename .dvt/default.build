@@ -1,0 +1,33 @@
+# Automatically identify and compile all the source files in the project directory.
+# DO NOT explicitly list files/directories in 'dvt_auto_init' sections. Use 'dvt_init' sections instead.
++dvt_init
+
++incdir+./rtl/fifo
++incdir+./rtl/fifo/ram
++incdir+./rtl/phy
++incdir+./rtl
++incdir+./tb
+
+./rtl/phy/usb_rx_phy_60MHz.vhdl
+./rtl/phy/usb_tx_phy.vhdl
+./rtl/phy/usb_rx_phy.vhdl 
+./rtl/phy/usb_phy.vhdl
+	
+./rtl/usb1_utmi_if.v
+./rtl/usb1_rom1.v
+./rtl/usb1_pl.v
+./rtl/usb1_pe.v
+./rtl/usb1_pd.v
+./rtl/usb1_pa.v
+./rtl/usb1_idma.v
+./rtl/usb1_fifo2.v
+./rtl/usb1_defines.v
+./rtl/usb1_ctrl.v
+./rtl/usb1_crc5.v
+./rtl/usb1_crc16.v
+./rtl/usb1_core.v
+
+./rtl/fifo/generic_fifo_sc_a.v
+./rtl/fifo/generic_dpram.v
+
+./tb/test_bench_top.v
